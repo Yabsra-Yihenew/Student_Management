@@ -74,23 +74,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col md 12">
+            <div class="col-md 12">
                                 <!-- The sidebar -->
                 <div class="sidebar">
                 <a class="active" href="#home">Home</a>
-                <a href="#news">Student</a>
-                <a href="#contact">Teacher</a>
-                <a href="#about">Cources</a>
+                <a href="{{ url('/students') }}">Student</a>
+                <a href="{{ url('/teachers') }}">Teacher</a>
+                <a href="{{ url('/cources') }}">Cources</a>
                 <a href="#contact">Enrollement</a>
                 <a href="#contact">Payment</a>
                 
                 </div>               
             </div>
-            <div class="col md 9">
-                 <!-- Page content -->
-                <div class="content">
+            <div class="col-md 9">
+                 
                     @yield('content')
-                </div>
+                
             </div>
         </div>
     </div>
